@@ -18,7 +18,7 @@ const WindowSizeTracker = () => {
 
     return (
         <div>
-            <h2>Window Width Tracker</h2>
+            <h1>Window Width Tracker</h1>
             <p>Current Width: {width}px</p>
         </div>
     )

@@ -1,0 +1,16 @@
+import React from 'react'
+
+const Phone = () => {
+    return (
+        <div>
+            <h2>Phone List :</h2>
+            <ul>
+                <li>Apple iPhone</li>
+                <li>Samsung Galaxy</li>
+                <li>Google Pixel</li>
+            </ul>
+        </div>
+    )
+}
+
+export default Phone

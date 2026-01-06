@@ -14,6 +14,9 @@ import First from './components/hooks/useEffect/First'
 import Timer from './components/hooks/useEffect/Timer'
 import WindowSizeTracker from './components/hooks/useEffect/WindowSizeTracker'
 import Users from './components/hooks/useEffect/Users'
+import FirstRoute from './router/FirstRoute'
+import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
+import Tracker from './components/expense-tracker-practice/Tracker'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -38,6 +41,13 @@ function App() {
             <Timer />
             <WindowSizeTracker />
             <Users /> */}
+
+            {/* routers */}
+            {/* <FirstRoute /> */}
+
+            {/* expense tracker project */}
+            {/* <ExpenseTracker /> */}
+            <Tracker />
         </>
     )
 }

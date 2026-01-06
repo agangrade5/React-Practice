@@ -13,6 +13,7 @@ const First = () => {
         <div>
             <h1>Use Effect: Render testing </h1>
             <h2>Count: {count}</h2>
+            <input type='text' value={name} placeholder='Name hare' onChange={(e) => setName(e.target.value)} />
             <button onClick={() => setCount(count + 1)}>Increase</button>
         </div>
     )
