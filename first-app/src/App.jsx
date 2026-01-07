@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Hello from './Hello'
+
 import Counter from './components/hooks/useState/Counter'
 import InputExample from './components/hooks/useState/InputExample'
 import MultiInputExample from './components/hooks/useState/MultiInputExample'
@@ -10,18 +11,30 @@ import AdvancedInputExample from './components/hooks/useState/AdvancedInputExamp
 import UncontrolledForm from './components/hooks/useRef/UncontrolledForm'
 import BasicValidationForm from './components/hooks/useState/BasicValidationForm'
 import TodoApp from './components/hooks/useState/TodoApp'
+
 import First from './components/hooks/useEffect/First'
 import Timer from './components/hooks/useEffect/Timer'
 import WindowSizeTracker from './components/hooks/useEffect/WindowSizeTracker'
 import Users from './components/hooks/useEffect/Users'
-import FirstRoute from './router/FirstRoute'
-import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
-import Tracker from './components/expense-tracker-practice/Tracker'
+
 import TimerEvent from './components/hooks/useEffectEvent/TimerEvent'
 import AutoSaveForm from './components/hooks/useEffectEvent/AutoSaveForm'
+
+import PropsDrillingContext from './components/hooks/useContext/PropsDrillingContext'
+import PropsDrillingContextMultipleValue from './components/hooks/useContext/PropsDrillingContextMultipleValue'
+import ThemeColor from './components/hooks/useContext/ThemeColor'
+import Navbar from './components/hooks/useContext/auth-example/Navbar'
+import { AuthProvider } from './components/hooks/useContext/auth-example/AuthContext'
+
+import FirstRoute from './router/FirstRoute'
+
+import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
+import Tracker from './components/expense-tracker-practice/Tracker'
+
 import PropsDrilling from './components/props-drilling/PropsDrilling'
 import StateLifting from './components/state-lifting/StateLifting'
 import SharedStates from './components/shared-states/SharedStates'
+
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -47,6 +60,14 @@ function App() {
             <WindowSizeTracker />
             <Users /> */}
 
+            {/* useContext hooks */}
+            {/* <PropsDrillingContext /> */}
+            {/* <PropsDrillingContextMultipleValue /> */}
+            {/* <ThemeColor /> */}
+            <AuthProvider>
+                <Navbar />
+            </AuthProvider>
+
             {/* routers */}
             {/* <FirstRoute /> */}
 
@@ -65,7 +86,7 @@ function App() {
             {/* <StateLifting /> */}
 
             {/* Shared States example */}
-            <SharedStates />
+            {/* <SharedStates /> */}
         </>
     )
 }
