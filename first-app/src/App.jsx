@@ -17,6 +17,11 @@ import Users from './components/hooks/useEffect/Users'
 import FirstRoute from './router/FirstRoute'
 import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
 import Tracker from './components/expense-tracker-practice/Tracker'
+import TimerEvent from './components/hooks/useEffectEvent/TimerEvent'
+import AutoSaveForm from './components/hooks/useEffectEvent/AutoSaveForm'
+import PropsDrilling from './components/props-drilling/PropsDrilling'
+import StateLifting from './components/state-lifting/StateLifting'
+import SharedStates from './components/shared-states/SharedStates'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -47,7 +52,20 @@ function App() {
 
             {/* expense tracker project */}
             {/* <ExpenseTracker /> */}
-            <Tracker />
+            {/* <Tracker /> */}
+
+            {/* useEffectEvent hooks */}
+            {/* <TimerEvent /> */}
+            {/* <AutoSaveForm /> */}
+
+            {/* Props Drilling example */}
+            {/* <PropsDrilling /> */}
+
+            {/* State Lifting example */}
+            {/* <StateLifting /> */}
+
+            {/* Shared States example */}
+            <SharedStates />
         </>
     )
 }
