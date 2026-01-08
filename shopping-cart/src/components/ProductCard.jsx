@@ -1,6 +1,9 @@
 import React from 'react';
+import { useCartContext } from '../context/CartContext';
 
 const ProductCard = ({ product }) => {
+    const { addToCart } = useCartContext();
+
     return (
         <div className="card product-card h-100 shadow-sm">
             {/* Fixed image size */}
@@ -32,9 +35,10 @@ const ProductCard = ({ product }) => {
                     ₹{product.price}
                 </h5>
 
-                <button className="btn btn-primary w-100 mt-2">
-                    Add to Cart
-                </button>
+                <button
+                    className="btn btn-primary w-100 mt-2"
+                    onClick={() => addToCart(product)}
+                >Add to Cart</button>
             </div>
         </div>
     );
