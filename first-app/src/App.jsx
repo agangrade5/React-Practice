@@ -30,6 +30,11 @@ import CheckboxToggle from './components/hooks/useReducer/CheckboxToggle'
 import CountReducer from './components/hooks/useReducer/CountReducer'
 import FormReducer from './components/hooks/useReducer/FormReducer'
 
+import WithoutUseMemo from './components/hooks/useMemo/WithoutUseMemo'
+import WithUseMemoFirst from './components/hooks/useMemo/WithUseMemoFirst'
+import WithUseMemoSecond from './components/hooks/useMemo/WithUseMemoSecond'
+import Parent from './components/hooks/useMemo/Parent'
+
 import FirstRoute from './router/FirstRoute'
 
 import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
@@ -46,22 +51,26 @@ function App() {
             {/* <Hello firstName="Jhon" lastName="smith" age="20" emailAddress="test@gmail.com" fruits={fruits} />
              */}
 
-            {/* useEffect hooks */}
-            {/* <Counter />
-            <InputExample />
-            <MultiInputExample />
-            <AdvancedInputExample />
-            <BasicValidationForm />
-            <TodoApp /> */}
+            {/* useState hooks */}
+            {/* <Counter /> */}
+            {/* <InputExample /> */}
+            {/* <MultiInputExample /> */}
+            {/* <AdvancedInputExample /> */}
+            {/* <BasicValidationForm /> */}
+            {/* <TodoApp /> */}
 
             {/* useRef hooks */}
             {/* <UncontrolledForm /> */}
 
             {/* useEffect hooks */}
-            {/* <First />
-            <Timer />
-            <WindowSizeTracker />
-            <Users /> */}
+            {/* <First /> */}
+            {/* <Timer /> */}
+            {/* <WindowSizeTracker /> */}
+            {/* <Users /> */}
+
+            {/* useEffectEvent hooks */}
+            {/* <TimerEvent /> */}
+            {/* <AutoSaveForm /> */}
 
             {/* useContext hooks */}
             {/* <PropsDrillingContext /> */}
@@ -74,7 +83,13 @@ function App() {
             {/* useReducer hooks */}
             {/* <CheckboxToggle /> */}
             {/* <CountReducer /> */}
-            <FormReducer />
+            {/* <FormReducer /> */}
+
+            {/* useMemo hooks */}
+            {/* <WithoutUseMemo /> */}
+            {/* <WithUseMemoFirst /> */}
+            {/* <WithUseMemoSecond /> */}
+            <Parent />
 
             {/* routers */}
             {/* <FirstRoute /> */}
@@ -82,10 +97,6 @@ function App() {
             {/* expense tracker project */}
             {/* <ExpenseTracker /> */}
             {/* <Tracker /> */}
-
-            {/* useEffectEvent hooks */}
-            {/* <TimerEvent /> */}
-            {/* <AutoSaveForm /> */}
 
             {/* Props Drilling example */}
             {/* <PropsDrilling /> */}
