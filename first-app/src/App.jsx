@@ -39,6 +39,13 @@ import Parent from './components/hooks/useMemo/Parent'
 //useCallback hook
 import CounterCallback from './components/hooks/useCallback/CounterCallback'
 import ParentCallback from './components/hooks/useCallback/ParentCallback'
+//useLayoutEffect hook
+import TestLayoutEffect from './components/hooks/useLayoutEffect/TestLayoutEffect'
+import Example1LayoutEffect from './components/hooks/useLayoutEffect/Example1LayoutEffect'
+import Example2LayoutEffect from './components/hooks/useLayoutEffect/Example2LayoutEffect'
+import ChatLayoutEffect from './components/hooks/useLayoutEffect/ChatLayoutEffect'
+//custom hook
+
 //router
 import FirstRoute from './router/FirstRoute'
 //expense-tracker practical
@@ -48,7 +55,6 @@ import Tracker from './components/expense-tracker-practice/Tracker'
 import PropsDrilling from './components/props-drilling/PropsDrilling'
 import StateLifting from './components/state-lifting/StateLifting'
 import SharedStates from './components/shared-states/SharedStates'
-
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -99,7 +105,15 @@ function App() {
 
             {/* useCallback hooks */}
             {/* <CounterCallback /> */}
-            <ParentCallback />
+            {/* <ParentCallback /> */}
+
+            {/* useLayoutEffect hooks */}
+            {/* <TestLayoutEffect /> */}
+            {/* <Example1LayoutEffect /> */}
+            {/* <Example2LayoutEffect /> */}
+            {/* <ChatLayoutEffect /> */}
+
+            {/* custom hooks */}
 
             {/* routers */}
             {/* <FirstRoute /> */}
