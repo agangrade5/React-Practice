@@ -1,0 +1,19 @@
+
+reducer syntax:-
+
+const [state, dispatch] = useReducer(reducer, initialArg);
+
+State => state variable
+InitialArg => datatype(array, object)
+State setter function => 
+    function reducer(state, action) { // state (old value and return new value) // action (action main kya performance karna hai)
+        switch(action.type){
+            case "increment"
+            case "decrement"
+            case "reset"
+        }
+    } 
+dispatch function => 
+    dispatch({ type: "increment" }) (button inside)
+    dispatch({ type: "decrement" })
+    dispatch({ type: "reset" })

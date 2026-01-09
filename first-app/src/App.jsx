@@ -26,6 +26,10 @@ import ThemeColor from './components/hooks/useContext/ThemeColor'
 import Navbar from './components/hooks/useContext/auth-example/Navbar'
 import { AuthProvider } from './components/hooks/useContext/auth-example/AuthContext'
 
+import CheckboxToggle from './components/hooks/useReducer/CheckboxToggle'
+import CountReducer from './components/hooks/useReducer/CountReducer'
+import FormReducer from './components/hooks/useReducer/FormReducer'
+
 import FirstRoute from './router/FirstRoute'
 
 import ExpenseTracker from './components/expense-tracker/ExpenseTracker'
@@ -34,7 +38,6 @@ import Tracker from './components/expense-tracker-practice/Tracker'
 import PropsDrilling from './components/props-drilling/PropsDrilling'
 import StateLifting from './components/state-lifting/StateLifting'
 import SharedStates from './components/shared-states/SharedStates'
-
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -64,9 +67,14 @@ function App() {
             {/* <PropsDrillingContext /> */}
             {/* <PropsDrillingContextMultipleValue /> */}
             {/* <ThemeColor /> */}
-            <AuthProvider>
+            {/* <AuthProvider>
                 <Navbar />
-            </AuthProvider>
+            </AuthProvider> */}
+
+            {/* useReducer hooks */}
+            {/* <CheckboxToggle /> */}
+            {/* <CountReducer /> */}
+            <FormReducer />
 
             {/* routers */}
             {/* <FirstRoute /> */}
