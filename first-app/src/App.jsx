@@ -45,7 +45,10 @@ import Example1LayoutEffect from './components/hooks/useLayoutEffect/Example1Lay
 import Example2LayoutEffect from './components/hooks/useLayoutEffect/Example2LayoutEffect'
 import ChatLayoutEffect from './components/hooks/useLayoutEffect/ChatLayoutEffect'
 //custom hook
-
+import ToggleTest from './components/hooks/customHook/ToggleTest'
+import ProductList from './components/hooks/customHook/ProductList'
+import LoginForm from './components/hooks/customHook/LoginForm'
+import Registration from './components/hooks/customHook/Registration'
 //router
 import FirstRoute from './router/FirstRoute'
 //expense-tracker practical
@@ -114,6 +117,10 @@ function App() {
             {/* <ChatLayoutEffect /> */}
 
             {/* custom hooks */}
+            {/* <ToggleTest /> */}
+            {/* <ProductList /> */}
+            {/* <LoginForm /> */}
+            <Registration />
 
             {/* routers */}
             {/* <FirstRoute /> */}
