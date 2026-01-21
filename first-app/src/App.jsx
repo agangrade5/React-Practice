@@ -58,6 +58,11 @@ import Tracker from './components/expense-tracker-practice/Tracker'
 import PropsDrilling from './components/props-drilling/PropsDrilling'
 import StateLifting from './components/state-lifting/StateLifting'
 import SharedStates from './components/shared-states/SharedStates'
+//hoc (Higher Order Component)
+import Greeting from './components/hoc/style/Greeting'
+import GreetingWithStyle from './components/hoc/style/GreetingWithStyle'
+import DashboardWithAuth from './components/hoc/auth/DashboardWithAuth'
+import PostListWithData from './components/hoc/data/PostListWithData'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -120,7 +125,7 @@ function App() {
             {/* <ToggleTest /> */}
             {/* <ProductList /> */}
             {/* <LoginForm /> */}
-            <Registration />
+            {/* <Registration /> */}
 
             {/* routers */}
             {/* <FirstRoute /> */}
@@ -137,6 +142,13 @@ function App() {
 
             {/* Shared States example */}
             {/* <SharedStates /> */}
+
+            {/* HOC (Higher Order Component) example */}
+            {/* <Greeting name="John Doe" /> */}
+            {/* <GreetingWithStyle name="Jane Smith" /> */}
+            {/* <DashboardWithAuth /> */}
+            {/* <PostListWithData name="Posts List" /> */}
+            
         </>
     )
 }
