@@ -15,7 +15,7 @@ const Contact = lazy(() => import('./pages/Contact'))
 const Products = lazy(() => import('./pages/Products'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Phone = lazy(() => import('./pages/Phone'))
-const Laptop = lazy(() => import('./pages/Laptop'))
+const Laptop = lazy(() => import('./pages/Laptop')) 
 
 const LazyRoute = () => {
 
