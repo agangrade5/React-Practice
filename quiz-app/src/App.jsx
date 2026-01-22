@@ -1,11 +1,24 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import Home from './pages/Home';
+import Quiz from './pages/Quiz';
+import LeaderBoard from './pages/LeaderBoard';
+
+const Result = lazy(() => import('./pages/Result'));
 
 function App() {
 
     return (
-        <>
-            <h1>Quiz App</h1>
-        </>
+        <BrowserRouter>
+            <Suspense fallback={<h2 className='text-center mt-5'>Loading...</h2>}>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/quiz' element={<Quiz />} />
+                    <Route path='/result' element={<Result />} />
+                    <Route path='/leaderboard' element={<LeaderBoard />} />
+                </Routes>
+            </Suspense>
+        </BrowserRouter>
     )
 }
 
