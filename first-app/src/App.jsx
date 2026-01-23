@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 //react first component
-/* import Hello from './Hello'
+import Hello from './Hello'
 //useState hook
 import Counter from './components/hooks/useState/Counter'
 import InputExample from './components/hooks/useState/InputExample'
@@ -65,8 +65,10 @@ import DashboardWithAuth from './components/hoc/auth/DashboardWithAuth'
 import PostListWithData from './components/hoc/data/PostListWithData'
 // Lazy Loading & Suspense Component
 import PostWithoutLazy from './components/lazy-loading/PostWithoutLazy'
-import PostWithLazy from './components/lazy-loading/PostWithLazy' */
+import PostWithLazy from './components/lazy-loading/PostWithLazy' 
 import LazyRoute from './components/lazy-loading/lazyRoute'
+//create-portal
+import Example1 from './components/create-portal/Example1'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -156,7 +158,10 @@ function App() {
             {/* Lazy Loading & Suspense Component  */}
             {/* <PostWithoutLazy /> */}
             {/* <PostWithLazy /> */}
-            <LazyRoute />
+            {/* <LazyRoute /> */}
+
+            {/* Create Portal example */}
+            {/* <Example1 /> */}
         </>
     )
 }
