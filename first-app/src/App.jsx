@@ -67,8 +67,10 @@ import PostListWithData from './components/hoc/data/PostListWithData'
 import PostWithoutLazy from './components/lazy-loading/PostWithoutLazy'
 import PostWithLazy from './components/lazy-loading/PostWithLazy' 
 import LazyRoute from './components/lazy-loading/lazyRoute'
-//create-portal
+//create-portal example
 import Example1 from './components/create-portal/Example1'
+//error-boundary example
+import ExampleErrorBoundary from './components/error-boundaries/ExampleErrorBoundary'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -162,6 +164,9 @@ function App() {
 
             {/* Create Portal example */}
             {/* <Example1 /> */}
+
+            {/* Error Boundary example */}
+            <ExampleErrorBoundary />
         </>
     )
 }
