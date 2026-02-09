@@ -10,7 +10,7 @@ const UserProfile = ({ userData }) => {
             <h4>User Profile</h4>
             <p>Name: {username}</p>
             <p>Age: {age}</p>
-      </div>
+        </div>
     )
 }
 

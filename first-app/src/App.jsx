@@ -71,6 +71,8 @@ import LazyRoute from './components/lazy-loading/lazyRoute'
 import Example1 from './components/create-portal/Example1'
 //error-boundary example
 import ExampleErrorBoundary from './components/error-boundaries/ExampleErrorBoundary'
+//react-hook-form example and dev tools
+import FormTest from './components/react-hook-form/FormTest'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -166,7 +168,10 @@ function App() {
             {/* <Example1 /> */}
 
             {/* Error Boundary example */}
-            <ExampleErrorBoundary />
+            {/* <ExampleErrorBoundary /> */}
+
+            {/* react hook form example and dev tools */}
+            <FormTest />
         </>
     )
 }
