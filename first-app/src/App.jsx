@@ -73,6 +73,8 @@ import Example1 from './components/create-portal/Example1'
 import ExampleErrorBoundary from './components/error-boundaries/ExampleErrorBoundary'
 //react-hook-form example and dev tools
 import FormTest from './components/react-hook-form/FormTest'
+//yup example
+import YupForm from './components/yup/YupForm'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -171,7 +173,10 @@ function App() {
             {/* <ExampleErrorBoundary /> */}
 
             {/* react hook form example and dev tools */}
-            <FormTest />
+            {/* <FormTest /> */}
+
+            {/* yup example */}
+            <YupForm />
         </>
     )
 }
