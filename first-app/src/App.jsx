@@ -65,7 +65,7 @@ import DashboardWithAuth from './components/hoc/auth/DashboardWithAuth'
 import PostListWithData from './components/hoc/data/PostListWithData'
 // Lazy Loading & Suspense Component
 import PostWithoutLazy from './components/lazy-loading/PostWithoutLazy'
-import PostWithLazy from './components/lazy-loading/PostWithLazy' 
+import PostWithLazy from './components/lazy-loading/PostWithLazy'
 import LazyRoute from './components/lazy-loading/lazyRoute'
 //create-portal example
 import Example1 from './components/create-portal/Example1'
@@ -75,6 +75,7 @@ import ExampleErrorBoundary from './components/error-boundaries/ExampleErrorBoun
 import FormTest from './components/react-hook-form/FormTest'
 //yup example
 import YupForm from './components/yup/YupForm'
+import SelectBox from './components/react-select-box/SelectBox'
 
 function App() {
     const fruits = ["Apple", "Orange", "Kiwi", "Banana", "Watermelon", "Papaya"];
@@ -160,7 +161,7 @@ function App() {
             {/* <GreetingWithStyle name="Jane Smith" /> */}
             {/* <DashboardWithAuth /> */}
             {/* <PostListWithData name="Posts List" /> */}
-            
+
             {/* Lazy Loading & Suspense Component  */}
             {/* <PostWithoutLazy /> */}
             {/* <PostWithLazy /> */}
@@ -176,7 +177,10 @@ function App() {
             {/* <FormTest /> */}
 
             {/* yup example */}
-            <YupForm />
+            {/* <YupForm /> */}
+
+            {/* react select example */}
+            <SelectBox />
         </>
     )
 }
